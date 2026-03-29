@@ -2,7 +2,6 @@
 import Main from "../../layouts/Main.astro";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
 import PageCard from "../../components/PageCard.astro";
 
 import type { PostFrontmatter } from "../../content/config";
@@ -34,7 +33,5 @@ const posts = await Astro.glob<PostFrontmatter>("../../content/posts/*.mdx");
         })
       }
     </article>
-
-    <Footer />
   </Main>
 </Layout>
